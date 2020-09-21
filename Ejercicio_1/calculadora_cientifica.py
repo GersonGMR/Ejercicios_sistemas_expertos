@@ -17,7 +17,7 @@ class Calc():
         self.total = 0
         self.actual = ""
         self.input_valor = True
-        self.check_suma = False
+        self.checkeo = False
         self.op = ""
         self.resultado = False
 
@@ -38,7 +38,7 @@ class Calc():
     def valor_total(self):
         self.resultado = True
         self.actual = float(self.actual)
-        if self.check_suma == True:
+        if self.checkeo == True:
             self.validar()
         else:
             self.total = float(vistaTexto.get())
@@ -58,17 +58,17 @@ class Calc():
         if self.op == "Mod":
             self.total %= self.actual
         self.input_valor = True
-        self.check_suma = False
+        self.checkeo = False
         self.vista(self.total)
 
     def operacion(self, op):
         self.actual = float(self.actual)
-        if self.check_suma:
+        if self.checkeo:
             self.validar()
         elif not self.resultado:
             self.total = self.actual
             self.input_valor = True
-        self.check_suma = True
+        self.checkeo = True
         self.op = op
         self.resultado = False
 
@@ -197,10 +197,10 @@ vistaTexto.insert(0,"0")
 teclas_numericas = "789456123"
 i = 0
 boton = []
-for j in range(2,5):
-    for k in range(3):
+for filas in range(2,5):
+    for columnas in range(3):
         boton.append(Button(calc, width = 6, height = 2, font = ('Kozuka Mincho Pr6N',20,'bold'), bg = "silver", bd = 4, text = teclas_numericas[i]))
-        boton[i].grid(row = j, column = k, pady = 1)
+        boton[i].grid(row = filas, column = columnas, pady = 1)
         boton[i]["command"] = lambda x = teclas_numericas [i]: valor_agregado.ingresando_numero(x)
         i += 1
 
