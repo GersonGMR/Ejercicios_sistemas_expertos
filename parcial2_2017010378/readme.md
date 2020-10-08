@@ -4,7 +4,8 @@
 3. subir la solución a una rama denominada “desarrollo2”, el nombre del archivo debe ser
 parcial2_<carnet>.<extension>
 4. Si la meta de optimización se cumple consolide en la rama master la nueva solución.
-
+## Enlace al video de la explicacion del codigo
+  https://youtu.be/pNT_Btvrm5c
 ## Resumen del código
 1. Se importan las librerías a utilizar, numpy y time.
 2. Generamos un muestreo aleatorio simple con NumPy(np.random).
