@@ -1,4 +1,4 @@
-# ESCENARIO LABORATORIO
+# Escenario del laboratorio
 Se solicita que codifique una solución que cumpla con las siguientes características:
 1. Generar una estructura de datos que almacene 10 millones de puntos en una distribución
 normal con una media de 500 y una escala de 30.
