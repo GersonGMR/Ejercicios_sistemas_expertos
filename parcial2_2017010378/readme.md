@@ -9,9 +9,7 @@ parcial2_<carnet>.<extension>
 1. Se importan las librerías a utilizar, numpy y time.
 2. Generamos un muestreo aleatorio simple con NumPy(np.random).
 3. Iniciamos la librería time(ejecución = time.time()) para empezar a contar el tiempo de ejecución desde el inicio del programa.
-4. Creamos una lista vacía llamada puntos_menores para almacenar todos nuestros datos filtrados menores a 500,000.
-5. Iniciamos un bucle para recorrer todos los datos de nuestro muestreo aleatorio.
-6. Realizamos una condición if para obtener solo los datos menores a 500,000.
-7. Almacenamos nuestros datos obtenidos en la lista vacía puntos_menores.
-8. Utilizamos la función de suma de NumPy(np.sum) para obtener la suma total de nuestros datos.
-9. Imprimimos la suma total de los datos y el tiempo de ejecución en segundos.
+4. Creamos una matriz de NumPy(np.array) en donde almacenamos todo nuestro muestreo aleatorio.
+5. Realizamos un recorrido en nuestra matriz(matriz_puntos) y una condición simple donde filtramos solo los datos menores a 500,000 y guardamos el resultado en la variable puntos_menores.
+6. Sumamos con NumPy(np.sum) todos los datos que se encuentran en la variable con los datos obtenidos (puntos_menores).
+7. Imprimimos la suma total de los datos menores a 500,000 y el tiempo de ejecución del programa en segundos.
