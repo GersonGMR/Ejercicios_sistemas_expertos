@@ -1,4 +1,4 @@
-# Escenario del parcial 2
+# Escenario del parcial
 1. Codificar una solución que optimice la ejecución del planteamiento del laboratorio.
 2. La solución debe optimizar el tiempo de ejecución al menos en un 300%.
 3. subir la solución a una rama denominada “desarrollo2”, el nombre del archivo debe ser
